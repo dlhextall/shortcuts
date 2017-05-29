@@ -16,7 +16,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  MDSendAppleEventToSystemProcess(kAEShutDown);
+  MDSendAppleEventToSystemProcess(kAEShowShutdownDialog);
 
   // Quit the app
   [[NSApplication sharedApplication] terminate:nil];
